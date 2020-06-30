@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="571.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szabadsag.view.WorkingTimeView">
+   <children>
+      <TableView fx:id="empTable" prefHeight="571.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="empCol" prefWidth="75.0" text="Alkalmazottak" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <VBox fx:id="calendarBox" alignment="TOP_CENTER" layoutX="200.0" prefHeight="571.0" prefWidth="700.0">
+         <children>
+            <HBox fx:id="choiceBox" alignment="CENTER" prefHeight="35.0" prefWidth="700.0" spacing="20.0">
+               <children>
+                  <ChoiceBox fx:id="chYear" prefHeight="27.0" prefWidth="120.0" />
+                  <ChoiceBox fx:id="chMonth" prefHeight="27.0" prefWidth="95.0" />
+                  <Button fx:id="btSave" mnemonicParsing="false" prefWidth="100.0" text="Mentés" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

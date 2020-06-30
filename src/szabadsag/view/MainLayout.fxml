@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szabadsag.view.MainLayout">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Fájl">
+            <items>
+                  <MenuItem fx:id="employeeMenu" mnemonicParsing="false" onAction="#onEmployeeMenu" text="Alkalmazottak" />
+                  <MenuItem fx:id="workingTimeMenu" mnemonicParsing="false" onAction="#onWorkingTimeMenu" text="Jelenléti" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem fx:id="exitMenu" mnemonicParsing="false" onAction="#onExitMenu" text="Bezárás" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Adatok">
+              <items>
+                <MenuItem fx:id="newMenu" mnemonicParsing="false" onAction="#onNewMenu" text="Új">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="UP" meta="DOWN" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="openMenu" mnemonicParsing="false" onAction="#onOpenMenu" text="Megnyitás">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="UP" meta="DOWN" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="saveMenu" mnemonicParsing="false" onAction="#onSaveMenu" text="Mentés">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="UP" meta="DOWN" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="saveAsMenu" mnemonicParsing="false" onAction="#onSaveAsMenu" text="Mentés másként..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
